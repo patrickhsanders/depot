@@ -1,10 +1,11 @@
+<blockquote>
        __                 __ 
   ____/ /__  ____  ____  / /_
  / __  / _ \/ __ \/ __ \/ __/
 / /_/ /  __/ /_/ / /_/ / /_  
 \__,_/\___/ .___/\____/\__/ 
          /_/  
-		
+</blockquote>		
 	
 Depot is a small data parser that takes data from [NYC Open data](http://nycopendata.socrata.com) and turns it into a (hopefully) more useful form. 
 
