@@ -1,13 +1,11 @@
-<blockquote>
-       __                 __ 
-  ____/ /__  ____  ____  / /_
- / __  / _ \/ __ \/ __ \/ __/
-/ /_/ /  __/ /_/ / /_/ / /_  
-\__,_/\___/ .___/\____/\__/ 
-         /_/  
-</blockquote>		
+>       __                 __ 
+>  ____/ /__  ____  ____  / /_
+> / __  / _ \/ __ \/ __ \/ __/
+>/ /_/ /  __/ /_/ / /_/ / /_  
+>\__,_/\___/ .___/\____/\__/ 
+>         /_/  
 	
-Depot is a small data parser that takes data from [NYC Open data](http://nycopendata.socrata.com) and turns it into a (hopefully) more useful form. 
+Depot is a small data parser that takes data from [NYC Open data](http://nycopendata.socrata.com) and turns it into a _(hopefully)_ more useful form. 
 
 Depot takes the list of all subway stations from the Subway Stations data set, sorts them by line, attempts to sort them and returns them in JSON format. 
 
@@ -15,8 +13,11 @@ The API supports queries for individual, multiple, or all lines.
 
 ###Example usage: 
 flag.st/subways _// returns all lines_
+
 flag.st/subways?line=A _//returns all stations on line A_
+
 flag.st/subways?line=F-Q _//returns all stations two lines, grouped by line_
+
 flag.st/subways?line=Q-F _//returns the exact same as above (e.g. queries are sorted by before being performed... caching and the likes)_
 
 Depot has built in source data and result caching to improve performance. Currently if source data caching is enabled, Depot will retrieve a copy data once a day. Cached results will be regenerated once daily as well. Both caching types can be disabled. 
